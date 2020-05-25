@@ -2,14 +2,14 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
 export class Element {
-  public sun: number;
-  public moon: number;
-  public fire: number;
-  public air: number;
-  public water: number;
-  public earth: number;
-  public plant: number;
-  public animal: number;
+  public sun: boolean;
+  public moon: boolean;
+  public fire: boolean;
+  public air: boolean;
+  public water: boolean;
+  public earth: boolean;
+  public plant: boolean;
+  public animal: boolean;
 }
 
 export class Card {
@@ -18,6 +18,7 @@ export class Card {
   public elements: Element;
   public speed: string;
   public range: string;
+  public targetType: string;
   public target: string;
   public text: string;
   public threshold: string;

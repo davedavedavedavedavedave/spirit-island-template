@@ -26,4 +26,10 @@ export class CardListComponent implements OnInit {
     this.cards$.next(this.cards$.getValue().concat(new Card()));
   }
 
+  cardChanged(card: Card, idx: number): void {
+    let cards = this.cards$.getValue();
+    cards[idx] = card;
+    this.cards$.next(cards);
+  }
+
 }

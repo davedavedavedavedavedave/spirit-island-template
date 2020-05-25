@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CardListComponent } from './card-list/card-list.component';
 import { MaterialModule } from './material-module';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardListComponent
+    CardListComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

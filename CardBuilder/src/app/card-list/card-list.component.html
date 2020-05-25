@@ -1,48 +1,6 @@
 <div class="cards">
   <div *ngFor="let card of cards$ | async; index as idx" class="card-container">
-    <div class="card slow">
-      <img class="image" src="example1.png" />
-
-      <div class="cost">{{ card.cost || 0 }}</div>
-      <div class="name">{{ card.title }}</div>
-
-      <div class="icon-sun" [class.active]="card.elements.sun > 0"></div>
-      <div class="icon-moon" [class.active]="card.elements.moon > 0"></div>
-      <div class="icon-fire" [class.active]="card.elements.fire > 0"></div>
-      <div class="icon-air" [class.active]="card.elements.air > 0"></div>
-      <div class="icon-water" [class.active]="card.elements.water > 0"></div>
-      <div class="icon-earth" [class.active]="card.elements.earth > 0"></div>
-      <div class="icon-plant" [class.active]="card.elements.plant > 0"></div>
-      <div class="icon-animal" [class.active]="card.elements.animal > 0"></div>
-
-      <div class="info-title">
-        <div class="info-title-speed">SPEED</div>
-        <div class="info-title-range">RANGE</div>
-        <div class="info-title-target">TARGET LAND</div>
-      </div>
-
-      <div class="info">
-        <div class="info-speed"></div>
-        <div class="info-range">
-          <div class="range">0</div>
-        </div>
-        <div class="info-target">
-          <div class="icon-sand"></div>
-        </div>
-      </div>
-
-      <div class="rules">
-        <p>
-          Gather 1 <span class="icon-explorer"></span>/<span class="icon-town"></span> .
-        </p>
-        <span class="icon-or"></span>
-        <p>
-          2 <span class="icon-fear"></span>.
-        </p>
-      </div>
-
-      <div class="artist">ARTIST NAME</div>
-    </div>
+    <app-card [card]="card" (cardChanged)="cardChanged($event, idx)"></app-card>
     <button mat-fab color="primary" class="addCard" (click)="removeCard(idx)">
       <mat-icon>delete</mat-icon>
     </button>

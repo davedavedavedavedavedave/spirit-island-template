@@ -1,0 +1,53 @@
+<div class="card {{ card.speed || 'slow' }}">
+  <img class="image" src="example1.png" />
+
+  <div class="cost" [class.active]="editing.indexOf('cost') > -1">
+    <div (click)="toggleEdit('cost')">{{ card.cost || 0 }}</div>
+    <input [value]="card.cost || 0" (keyup)="changeCost($event.target.value)" class="edit" />
+  </div>
+  <div class="title" [class.active]="editing.indexOf('title') > -1">
+    <div (click)="toggleEdit('title')">{{ card.title || "Title" }}</div>
+    <input [value]="card.title || 'Title'" (keyup)="changeTitle($event.target.value)" class="edit" />
+  </div>
+
+  <div class="icon-sun" [class.active]="card.elements.sun" (click)="toggleElement('sun')"></div>
+  <div class="icon-moon" [class.active]="card.elements.moon" (click)="toggleElement('moon')"></div>
+  <div class="icon-fire" [class.active]="card.elements.fire" (click)="toggleElement('fire')"></div>
+  <div class="icon-air" [class.active]="card.elements.air" (click)="toggleElement('air')"></div>
+  <div class="icon-water" [class.active]="card.elements.water" (click)="toggleElement('water')"></div>
+  <div class="icon-earth" [class.active]="card.elements.earth" (click)="toggleElement('earth')"></div>
+  <div class="icon-plant" [class.active]="card.elements.plant" (click)="toggleElement('plant')"></div>
+  <div class="icon-animal" [class.active]="card.elements.animal" (click)="toggleElement('animal')"></div>
+
+  <div class="info-title">
+    <div class="info-title-speed">Speed</div>
+    <div class="info-title-range">Range</div>
+    <div class="info-title-target" (click)="toggleTargetType()">{{ card.targetType || "Target Land" }}</div>
+  </div>
+
+  <div class="info">
+    <div class="info-speed" (click)="toggleSpeed()"></div>
+    <div class="info-range" [class.active]="editing.indexOf('range') > -1">
+      <div (click)="toggleEdit('range')" innerHTML="{{ formatString(card.range) }}"></div>
+      <input [value]="card.range || ''" (keyup)="changeRange($event.target.value)" class="edit" />
+    </div>
+    <div class="info-target" [class.active]="editing.indexOf('target') > -1">
+      <div (click)="toggleEdit('target')" innerHTML="{{ formatString(card.target) }}"></div>
+      <input [value]="card.target || ''" (keyup)="changeTarget($event.target.value)" class="edit" />
+    </div>
+  </div>
+
+  <div class="text" [class.active]="editing.indexOf('text') > -1">
+    <div (click)="toggleEdit('text')" innerHTML="{{ formatString(card.text) }}"></div>
+    <textarea (keyup)="changeText($event.target.value)" class="edit">{{ card.text || '' }}</textarea>
+    <!-- <p>
+      Gather 1 <span class="icon-explorer"></span>/<span class="icon-town"></span> .
+    </p>
+    <span class="icon-or"></span>
+    <p>
+      2 <span class="icon-fear"></span>.
+    </p> -->
+  </div>
+
+  <div class="artist">ARTIST NAME</div>
+</div>
