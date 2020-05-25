@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face{
   font-family: JosefinSans-Regular;
-  src: url(/assets/fonts/josefin-sans/JosefinSans-Regular.ttf);
+  src: url(assets/fonts/josefin-sans/JosefinSans-Regular.ttf);
 }
 
 html, body { height: 100%; }
@@ -36,37 +36,37 @@ body { margin: 0; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet M
 .card {
   .icon-sun {
     top: 129px;
-    background-image: url('/assets/images/80px-Sunelement.png');
+    background-image: url('assets/images/80px-Sunelement.png');
   }
   .icon-moon {
     top: 192px;
-    background-image: url('/assets/images/80px-Moonelement.png');
+    background-image: url('assets/images/80px-Moonelement.png');
   }
   .icon-fire {
     top: 260px;
-    background-image: url('/assets/images/80px-Fireelement.png');
+    background-image: url('assets/images/80px-Fireelement.png');
   }
   .icon-air {
     top: 324px;
-    background-image: url('/assets/images/80px-Airelement.png');
+    background-image: url('assets/images/80px-Airelement.png');
   }
   .icon-water {
     top: 386px;
     left: 29px;
-    background-image: url('/assets/images/80px-Waterelement.png');
+    background-image: url('assets/images/80px-Waterelement.png');
   }
   .icon-earth {
     top: 449px;
-    background-image: url('/assets/images/80px-Earthelement.png');
+    background-image: url('assets/images/80px-Earthelement.png');
   }
   .icon-plant {
     top: 515px;
     left: 28px;
-    background-image: url('/assets/images/80px-Plantelement.png');
+    background-image: url('assets/images/80px-Plantelement.png');
   }
   .icon-animal {
     top: 578px;
-    background-image: url('/assets/images/80px-Animalelement.png');
+    background-image: url('assets/images/80px-Animalelement.png');
   }
 }
 
@@ -105,7 +105,7 @@ body { margin: 0; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet M
 }
 
 .icon-or {
-  background-image: url('/assets/images/or.png');
+  background-image: url('assets/images/or.png');
   height: 40px;
   width: 100%;
   background-repeat: no-repeat;
@@ -118,7 +118,7 @@ body { margin: 0; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet M
   width: 50px;
   height: 32px;
   text-align: center;
-  background-image: url('/assets/images/50px-Rangeicon.png');
+  background-image: url('assets/images/50px-Rangeicon.png');
   background-repeat: no-repeat;
   background-position-y: 23px;
 }
@@ -127,7 +127,7 @@ body { margin: 0; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet M
   width: 88px;
   height: 4px;
   text-align: center;
-  background-image: url('/assets/images/no-range.png');
+  background-image: url('assets/images/no-range.png');
   background-repeat: no-repeat;
   background-size: 88px 4px;
 }
@@ -137,52 +137,52 @@ body { margin: 0; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet M
 
 
 
-.icon-range {background-image: url('/assets/images/50px-Rangeicon.png');}
-.icon-spirit {background-image: url('/assets/images/50px-Spiriticon.png'); }
+.icon-range {background-image: url('assets/images/50px-Rangeicon.png');}
+.icon-spirit {background-image: url('assets/images/50px-Spiriticon.png'); }
 
-.icon-badlands {background-image: url('/assets/images/25px-Badlandsicon.png'); }
-.icon-beast {background-image: url('/assets/images/25px-Beasticon.png'); }
-.icon-disease {background-image: url('/assets/images/25px-Diseaseicon.png'); }
-.icon-strife {background-image: url('/assets/images/25px-Strifeicon.png'); }
-.icon-wild {background-image: url('/assets/images/25px-Wildicon.png'); }
+.icon-badlands {background-image: url('assets/images/25px-Badlandsicon.png'); }
+.icon-beast {background-image: url('assets/images/25px-Beasticon.png'); }
+.icon-disease {background-image: url('assets/images/25px-Diseaseicon.png'); }
+.icon-strife {background-image: url('assets/images/25px-Strifeicon.png'); }
+.icon-wild {background-image: url('assets/images/25px-Wildicon.png'); }
 
-.icon-fast {background-image: url('/assets/images/25px-Fasticon.png');}
-.icon-slow {background-image: url('/assets/images/50px-Slowicon.png');}
-.icon-blight {background-image: url('/assets/images/25px-Blighticon.png');}
-.icon-dahan {background-image: url('/assets/images/25px-Dahanicon.png');}
-.icon-fear {background-image: url('/assets/images/25px-Fearicon.png');}
-.icon-escalation {background-image: url('/assets/images/10px-Stage_II_Escalation.png'); margin-bottom: 0px;}
+.icon-fast {background-image: url('assets/images/25px-Fasticon.png');}
+.icon-slow {background-image: url('assets/images/50px-Slowicon.png');}
+.icon-blight {background-image: url('assets/images/25px-Blighticon.png');}
+.icon-dahan {background-image: url('assets/images/25px-Dahanicon.png');}
+.icon-fear {background-image: url('assets/images/25px-Fearicon.png');}
+.icon-escalation {background-image: url('assets/images/10px-Stage_II_Escalation.png'); margin-bottom: 0px;}
 
-.icon-explorer {background-image: url('/assets/images/15px-Explorericon.png'); margin-left: -2px; margin-right: -2px;}
-.icon-town {background-image: url('/assets/images/25px-Townicon.png');}
-.icon-city {background-image: url('/assets/images/25px-Citiyicon.png');}
+.icon-explorer {background-image: url('assets/images/15px-Explorericon.png'); margin-left: -2px; margin-right: -2px;}
+.icon-town {background-image: url('assets/images/25px-Townicon.png');}
+.icon-city {background-image: url('assets/images/25px-Citiyicon.png');}
 
-.icon-presence-white {background-image: url('/assets/images/25px-Presenceicon-inverse.png'); margin-left: 3px; margin-right: 3px;}
-.icon-presence {background-image: url('/assets/images/25px-Presenceicon.png');}
-.icon-sacred-site {background-image: url('/assets/images/25px-Sacredsiteicon.png') }
+.icon-presence-white {background-image: url('assets/images/25px-Presenceicon-inverse.png'); margin-left: 3px; margin-right: 3px;}
+.icon-presence {background-image: url('assets/images/25px-Presenceicon.png');}
+.icon-sacred-site {background-image: url('assets/images/25px-Sacredsiteicon.png') }
 
-.icon-earth { background-image: url('/assets/images/35px-Earthelement.png'); }
-.icon-sun { background-image: url('/assets/images/35px-Sunelement.png'); }
-.icon-plant { background-image: url('/assets/images/35px-Plantelement.png'); }
-.icon-water { background-image: url('/assets/images/35px-Waterelement.png'); }
-.icon-moon {background-image: url('/assets/images/35px-Moonelement.png'); }
-.icon-fire {background-image: url('/assets/images/35px-Fireelement.png'); }
-.icon-air {background-image: url('/assets/images/35px-Airelement.png'); }
+.icon-earth { background-image: url('assets/images/35px-Earthelement.png'); }
+.icon-sun { background-image: url('assets/images/35px-Sunelement.png'); }
+.icon-plant { background-image: url('assets/images/35px-Plantelement.png'); }
+.icon-water { background-image: url('assets/images/35px-Waterelement.png'); }
+.icon-moon {background-image: url('assets/images/35px-Moonelement.png'); }
+.icon-fire {background-image: url('assets/images/35px-Fireelement.png'); }
+.icon-air {background-image: url('assets/images/35px-Airelement.png'); }
 
-.icon-jungle {background-image: url('/assets/images/50px-jungle.png'); }
-.icon-mountain {background-image: url('/assets/images/50px-mountain.png'); }
-.icon-sand {background-image: url('/assets/images/50px-sand.png'); }
-.icon-wetland {background-image: url('/assets/images/50px-wetland.png'); }
-.icon-ocean {background-image: url('/assets/images/50px-ocean.png'); }
+.icon-jungle {background-image: url('assets/images/50px-jungle.png'); }
+.icon-mountain {background-image: url('assets/images/50px-mountain.png'); }
+.icon-sand {background-image: url('assets/images/50px-sand.png'); }
+.icon-wetland {background-image: url('assets/images/50px-wetland.png'); }
+.icon-ocean {background-image: url('assets/images/50px-ocean.png'); }
 
-.icon-jungle-presence {background-image: url('/assets/images/50px-jungle-presence.png'); }
-.icon-mountain-presence {background-image: url('/assets/images/50px-mountain-presence.png'); }
-.icon-sand-presence {background-image: url('/assets/images/50px-sand-presence.png'); }
-.icon-wetland-presence {background-image: url('/assets/images/50px-wetland-presence.png'); }
+.icon-jungle-presence {background-image: url('assets/images/50px-jungle-presence.png'); }
+.icon-mountain-presence {background-image: url('assets/images/50px-mountain-presence.png'); }
+.icon-sand-presence {background-image: url('assets/images/50px-sand-presence.png'); }
+.icon-wetland-presence {background-image: url('assets/images/50px-wetland-presence.png'); }
 
-.icon-jungle-sand {background-image: url('/assets/images/50px-jungle-sand.png'); }
-.icon-jungle-wetland {background-image: url('/assets/images/50px-jungle-wetland.png'); }
-.icon-mountain-jungle {background-image: url('/assets/images/50px-mountain-jungle.png'); }
-.icon-mountain-sand {background-image: url('/assets/images/50px-mountain-sand.png'); }
-.icon-mountain-wetland {background-image: url('/assets/images/50px-mountain-wetland.png'); }
-.icon-sand-wetland {background-image: url('/assets/images/50px-sand-wetland.png'); }
+.icon-jungle-sand {background-image: url('assets/images/50px-jungle-sand.png'); }
+.icon-jungle-wetland {background-image: url('assets/images/50px-jungle-wetland.png'); }
+.icon-mountain-jungle {background-image: url('assets/images/50px-mountain-jungle.png'); }
+.icon-mountain-sand {background-image: url('assets/images/50px-mountain-sand.png'); }
+.icon-mountain-wetland {background-image: url('assets/images/50px-mountain-wetland.png'); }
+.icon-sand-wetland {background-image: url('assets/images/50px-sand-wetland.png'); }
