@@ -1,0 +1,359 @@
+.cards {
+  padding: 32px;
+  display: flex;
+}
+.card-container {
+  margin: 16px;
+}
+.card-container > button {
+  margin: 0 auto;
+  display: block;
+}
+.card {
+  position: relative;
+  overflow: hidden;
+  background: gray;
+  width: 488px;
+  height: 682px;
+  border-radius: 22px;
+  margin-bottom: 16px;
+}
+
+
+.card.fast {
+  background-image: url('/assets/images/fast-card-transparent.PNG');
+  background-position-y: -20px;
+  background-position-x: -11px;
+}
+
+.card.slow {
+  background-image: url('/assets/images/slow-card-transparent.PNG');
+  background-position-y: -20px;
+  background-position-x: -12px;
+}
+
+.card.fast .info-speed {
+  background-image: url('/assets/images/50px-Fasticon.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px 30px;
+}
+
+.card.slow .info-speed {
+  background-image: url('/assets/images/50px-Slowicon.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px 30px;
+}
+
+.cost {
+  font-family: 'Gobold Extra2';
+  font-size: 34px;
+  color: white;
+  position: absolute;
+  left: 68px;
+  top: 47px;
+}
+
+.name {
+  position: absolute;
+  left: 135px;
+  top: 28px;
+  height: 62px;
+  width: 310px;
+
+  font-size: 34px;
+  line-height: 32px;
+  font-family: 'DK Snemand';
+  text-transform: uppercase;
+  color: white;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: normal;
+}
+
+.image {
+  position: absolute;
+  left: 108px;
+  top: 97px;
+  width: 352px;
+  height: 260px;
+  border-top-left-radius: 10px;
+}
+
+.info-title {
+  position: absolute;
+  left: 108px;
+  top: 336px;
+  height: 22px;
+  width: 353px;
+
+  display: flex;
+  align-items: center;
+
+  color: white;
+  font-family: 'DK Snemand';
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: center;
+  background-color: rgba(248, 215, 106, 0.4);
+}
+
+.info {
+  position: absolute;
+  left: 108px;
+  top: 358px;
+  width: 353px;
+  height: 38px;
+
+  display: flex;
+
+  font-family: 'DK Snemand';
+  text-transform: uppercase;
+  background-color: rgb(255, 251, 188);
+}
+
+.info-title-speed,
+.info-speed {
+  width: 107px;
+}
+.info-title-range,
+.info-range {
+  width: 118px;
+}
+.info-title-target,
+.info-target {
+  flex-grow: 1;
+}
+
+.info-range {
+  font-size: 26px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid gray;
+}
+
+.range {
+  width: 50px;
+  height: 32px;
+  text-align: center;
+  background-image: url('/assets/images/50px-Rangeicon.png');
+  background-repeat: no-repeat;
+  background-position-y: 23px;
+}
+
+.no-range {
+  width: 88px;
+  height: 4px;
+  text-align: center;
+  background-image: url('/assets/images/no-range.png');
+  background-repeat: no-repeat;
+  background-size: 88px 4px;
+}
+
+.info-target {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  border-left: 1px solid gray;
+}
+
+.rules {
+  position: absolute;
+  left: 108px;
+  top: 394px;
+  width: 353px;
+  height: 247px;
+
+  box-sizing: border-box;
+  padding-top: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'JosefinSans-Regular';
+  font-size: 22px;
+  line-height: 30px;
+
+  background-color: white;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 2px;
+}
+
+.artist {
+  position: absolute;
+  left: 132px;
+  top: 645px;
+  width: 253px;
+  height: 14px;
+
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'JosefinSans-Regular';
+  font-size: 11px;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  width: 25px;
+  height: 25px;
+  margin-top: -7px;
+  margin-bottom: -4px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  .card > & {
+    position: absolute;
+    left: 25px;
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+  }
+}
+.card {
+  .icon-sun {
+    top: 129px;
+    background-image: url('/assets/images/80px-Sunelement.png');
+  }
+  .icon-moon {
+    top: 192px;
+    background-image: url('/assets/images/80px-Moonelement.png');
+  }
+  .icon-fire {
+    top: 260px;
+    background-image: url('/assets/images/80px-Fireelement.png');
+  }
+  .icon-air {
+    top: 324px;
+    background-image: url('/assets/images/80px-Airelement.png');
+  }
+  .icon-water {
+    top: 386px;
+    left: 29px;
+    background-image: url('/assets/images/80px-Waterelement.png');
+  }
+  .icon-earth {
+    top: 449px;
+    background-image: url('/assets/images/80px-Earthelement.png');
+  }
+  .icon-plant {
+    top: 515px;
+    left: 28px;
+    background-image: url('/assets/images/80px-Plantelement.png');
+  }
+  .icon-animal {
+    top: 578px;
+    background-image: url('/assets/images/80px-Animalelement.png');
+  }
+}
+
+.icon.bigger {
+  height: 30px;
+  width: 30px;
+  margin-bottom: -10px;
+}
+
+.info-range .icon {
+  width: 40px;
+  height: 32px;
+}
+
+.info-target .icon {
+  width: 70px;
+  height: 32px;
+}
+
+.info-target .icon-spirit {
+  width: 32px;
+  height: 28px;
+}
+
+.icon-town {
+  margin-left: 6px;
+}
+
+.icon-range {
+  width: 50px;
+  margin-top: -10px;
+}
+
+.icon-presence {
+  height: 20px;
+}
+
+.icon-or {
+  background-image: url('/assets/images/or.png');
+  height: 40px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+.icon-range {background-image: url('/assets/images/50px-Rangeicon.png');}
+.icon-spirit {background-image: url('/assets/images/50px-Spiriticon.png'); }
+
+.icon-badlands {background-image: url('/assets/images/25px-Badlandsicon.png'); }
+.icon-beast {background-image: url('/assets/images/25px-Beasticon.png'); }
+.icon-disease {background-image: url('/assets/images/25px-Diseaseicon.png'); }
+.icon-strife {background-image: url('/assets/images/25px-Strifeicon.png'); }
+.icon-wild {background-image: url('/assets/images/25px-Wildicon.png'); }
+
+.icon-fast {background-image: url('/assets/images/25px-Fasticon.png');}
+.icon-slow {background-image: url('/assets/images/50px-Slowicon.png');}
+.icon-blight {background-image: url('/assets/images/25px-Blighticon.png');}
+.icon-dahan {background-image: url('/assets/images/25px-Dahanicon.png');}
+.icon-fear {background-image: url('/assets/images/25px-Fearicon.png');}
+.icon-escalation {background-image: url('/assets/images/10px-Stage_II_Escalation.png'); margin-bottom: 0px;}
+
+.icon-explorer {background-image: url('/assets/images/15px-Explorericon.png'); margin-left: -2px; margin-right: -2px;}
+.icon-town {background-image: url('/assets/images/25px-Townicon.png');}
+.icon-city {background-image: url('/assets/images/25px-Citiyicon.png');}
+
+.icon-presence-white {background-image: url('/assets/images/25px-Presenceicon-inverse.png'); margin-left: 3px; margin-right: 3px;}
+.icon-presence {background-image: url('/assets/images/25px-Presenceicon.png');}
+.icon-sacred-site {background-image: url('/assets/images/25px-Sacredsiteicon.png') }
+
+.icon-earth { background-image: url('/assets/images/35px-Earthelement.png'); }
+.icon-sun { background-image: url('/assets/images/35px-Sunelement.png'); }
+.icon-plant { background-image: url('/assets/images/35px-Plantelement.png'); }
+.icon-water { background-image: url('/assets/images/35px-Waterelement.png'); }
+.icon-moon {background-image: url('/assets/images/35px-Moonelement.png'); }
+.icon-fire {background-image: url('/assets/images/35px-Fireelement.png'); }
+.icon-air {background-image: url('/assets/images/35px-Airelement.png'); }
+
+.icon-jungle {background-image: url('/assets/images/50px-jungle.png'); }
+.icon-mountain {background-image: url('/assets/images/50px-mountain.png'); }
+.icon-sand {background-image: url('/assets/images/50px-sand.png'); }
+.icon-wetland {background-image: url('/assets/images/50px-wetland.png'); }
+.icon-ocean {background-image: url('/assets/images/50px-ocean.png'); }
+
+.icon-jungle-presence {background-image: url('/assets/images/50px-jungle-presence.png'); }
+.icon-mountain-presence {background-image: url('/assets/images/50px-mountain-presence.png'); }
+.icon-sand-presence {background-image: url('/assets/images/50px-sand-presence.png'); }
+.icon-wetland-presence {background-image: url('/assets/images/50px-wetland-presence.png'); }
+
+.icon-jungle-sand {background-image: url('/assets/images/50px-jungle-sand.png'); }
+.icon-jungle-wetland {background-image: url('/assets/images/50px-jungle-wetland.png'); }
+.icon-mountain-jungle {background-image: url('/assets/images/50px-mountain-jungle.png'); }
+.icon-mountain-sand {background-image: url('/assets/images/50px-mountain-sand.png'); }
+.icon-mountain-wetland {background-image: url('/assets/images/50px-mountain-wetland.png'); }
+.icon-sand-wetland {background-image: url('/assets/images/50px-sand-wetland.png'); }
